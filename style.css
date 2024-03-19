@@ -1,0 +1,133 @@
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding-top: 80px;
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes animacao {
+  from {
+    background-color: pink;
+    width: 35%;
+  }
+  to {
+    background-color: lightblue;
+    width: 100%;
+  }
+}
+
+.header {
+  position: fixed;
+  /* position: sticky; */
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap; /*Caso eu queira que o texto se ajuste seria bom deixar wrap */
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.menu {
+  display: flex;
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+.menu li :hover {
+  color: blueviolet;
+}
+
+.conteiner-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap; /*Caso eu queira que o texto se ajuste seria bom deixar wrap */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+.form {
+  padding-right: 20px;
+}
+
+.foto-perfil img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.main {
+  max-width: 1880px;
+}
+
+.main section,
+h1,
+h2,
+h3,
+p {
+  margin-left: 20px;
+}
+
+.footer {
+  background-color: lightblue;
+  /* top: 0 !important;
+  width: 100% !important; */
+}
+
+.footer h2 {
+  font-size: medium;
+  margin: 0px;
+  margin-left: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap; /*Caso eu queira que o texto se ajuste seria bom deixar wrap */
+  justify-content: space-around;
+  align-items: center;
+  max-width: 60%;
+}
+
+.footer ul li {
+  display: inline-block;
+}
+
+.footer ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer ul li img {
+  vertical-align: middle;
+  margin: 5px;
+  width: 30px;
+}
